@@ -1,6 +1,6 @@
 <template>
     <div class="button-container">
-        <div class="button">
+        <div class="button" :style="{width: width}">
             {{ name }}
         </div>
     </div>
@@ -10,7 +10,8 @@
   export default {
     name: 'ButtonComponent',
     props: {
-      name: String
+      name: String,
+      width: String,
     }
   }
   </script>
@@ -18,15 +19,19 @@
   .button-container{
     display: flex;
     flex-direction: column;
-    width: 3rem;
+    width: 80px;
   }
+
   .button{
     display: flex;
-    background: blue;
+    background: #2F80ED;
     border-radius: 4px;
     justify-content: center;
-    width: 80px;
     padding: 0.5rem;
+  }
+
+  .button:hover{
+    cursor: url('@/assets/cursor.svg'), auto;
   }
 
   .button-name{

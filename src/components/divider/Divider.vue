@@ -11,7 +11,7 @@
   <style >
   .divider{
     padding: 1px 0 0 0;
-    background: #828282;
+    background: #BDBDBD;
   }
   </style>
   

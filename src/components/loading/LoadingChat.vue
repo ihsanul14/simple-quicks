@@ -1,8 +1,7 @@
 <template>
-    <div class="loading-container">
-      <div class='loading-content'>
+    <div class="loading-chat-container">
+      <div class='loading-chat-content'>
       </div>
-      <div class='loading-content-text'>Loading {{name}} ...</div>
     </div>
   </template>
   
@@ -16,26 +15,24 @@
   </script>
   <style >
 
-  .loading-container{
-    height:'100vh';
-    width:'100vw';
+  .loading-chat-container{
     display:'flex';
     justify-content:'center';
     align-items:'center';
     flex-direction: column;
   }
-  .loading-content {
-    border: 8px solid white;
-    border-top: 8px solid #828282;
+  .loading-chat-content {
+    border: 4px solid white;
+    border-top: 4px solid #2F80ED;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 34px;
+    height: 34px;
     animation: spin 1s linear infinite;
     margin: auto;
     margin-bottom: 0.5rem;
   }
 
-  .loading-content-text{
+  .loading-chat-content-text{
     color: #828282;
     text-align: center;
   }

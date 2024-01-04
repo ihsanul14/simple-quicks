@@ -1,5 +1,5 @@
 <template>
-  <FoundationPage msg="Welcome to Quicks App"/>
+  <FoundationPage />
 </template>
 
 <script>
@@ -12,6 +12,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>
